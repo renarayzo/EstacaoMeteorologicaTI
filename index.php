@@ -1,17 +1,22 @@
 <?php
     session_start();
-    $file = fopen("./assets/users.txt", "r");
+    $file = fopen("./assets/users.txt", "r"); 
 
+    // Verifica se o username existe
     if(isset($_POST['username'])){  
         // Precorre cada linha do ficheiro
         while(!feof($file)) {
             $line = fgets($file);
+            $line = trim($line); // Retira os espaços a mais
             $credentials = explode(",", $line); // Separa a linha em username e password
 
             // Verifica se o username e a password estão corretas
-            if ($credentials[0] == $_POST['username'] && $credentials[1] == $_POST['password']) {
+            if ($credentials[0] == $_POST['username'] && password_verify($_POST['password'], $credentials[1])) {
                 header("refresh:1; dashboard.php");
                 break; // Sai do ciclo se encontrar o username e a password corretas
+            }
+            else{
+                
             }
         }
     }
@@ -20,7 +25,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +62,8 @@
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Submeter</button>
                     </form>
                 </div>
+                
+                <div class="alert alert-danger" role="alert" style="display: none;">Username Ou Password Incorretas!</div>
             </div>
         </div>
 
