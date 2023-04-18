@@ -12,11 +12,13 @@
 
             // Verifica se o username e a password estão corretas
             if ($credentials[0] == $_POST['username'] && password_verify($_POST['password'], $credentials[1])) {
-                header("refresh:1; dashboard.php");
+                $loginStatus = true;
+                $_SESSION['username'] = $_POST['username'];
+                header("refresh:3; dashboard.php");
                 break; // Sai do ciclo se encontrar o username e a password corretas
             }
             else{
-                
+                $loginStatus = false;
             }
         }
     }
@@ -62,8 +64,15 @@
                         <button type="submit" class="btn btn-primary btn-lg btn-block">Submeter</button>
                     </form>
                 </div>
+                <br>
                 
-                <div class="alert alert-danger" role="alert" style="display: none;">Username Ou Password Incorretas!</div>
+                <?php if(isset($loginStatus) && $loginStatus == false){?>
+                    <hr style="height:3px;border-width:0;background-color:black;border-radius:5px;width:50%">
+                    <div class="alert alert-danger" role="alert" style="width:67%">Username ou Password Incorretas!</div>
+                <?php }elseif(isset($loginStatus) && $loginStatus == true){?>
+                    <hr style="height:3px;border-width:0;background-color:black;border-radius:5px;width:50%">
+                    <div class="alert alert-success" role="alert" style="width:67%">Autenticação Efetuada com Sucesso!</div>
+                <?php }?>
             </div>
         </div>
 
