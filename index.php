@@ -66,10 +66,12 @@
                 </div>
                 <br>
                 
-                <?php if(isset($loginStatus) && $loginStatus == false){?>
+                <?php if(isset($loginStatus) && $loginStatus == false){ //Se $loginStatus existir e as credenciais estão incorretas?>
+                    <!-- Alerta de Falha ao Auntenticar -->
                     <hr style="height:3px;border-width:0;background-color:black;border-radius:5px;width:50%">
                     <div class="alert alert-danger" role="alert" style="width:67%">Username ou Password Incorretas!</div>
-                <?php }elseif(isset($loginStatus) && $loginStatus == true){?>
+                <?php }elseif(isset($loginStatus) && $loginStatus == true){ //Se $loginStatus existir e as credenciais estão corretas?>
+                    <!-- Alerta de Falha ao Auntenticar -->
                     <hr style="height:3px;border-width:0;background-color:black;border-radius:5px;width:50%">
                     <div class="alert alert-success" role="alert" style="width:67%">Autenticação Efetuada com Sucesso!</div>
                 <?php }?>

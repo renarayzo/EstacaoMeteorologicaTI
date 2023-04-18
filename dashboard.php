@@ -38,7 +38,7 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Histórico</a>
+                        <a class="nav-link" href="historico.php">Histórico</a>
                     </li>
                 </ul>
 
@@ -51,8 +51,8 @@
         <div class="container">
             <div class="card">
                 <div class="card-body">
-                    <img class="float-end" src="./imagens/estg.png" alt="Imagem Estg" width="300px" style="display: inline;">
-                    <h1 class="card-title">Servidor IoT</h5>
+                    <img class="float-end" src="./images/logoDashboardMet.jpg" alt="Logo Dashboard" width="180px" style="display: inline;">
+                    <h1 class="card-title">Estação Meteorologica Inteligente</h5>
                     <p class="card-text">Bem Vindo <strong><?php echo $_SESSION['username'] ?></strong></p>
                     <a>Tecnologias de Internet - Engenharia Informática<a>
                 </div>
@@ -69,7 +69,7 @@
                             <strong>Temperatura: <?php echo $valor_temperatura; ?>°</strong>
                         </div>
                         <div class="card-body">
-                            <img src="./imagens/temperature-high.png" alt="">
+                            <img src="./images/temperature-high.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
                             <strong>Atualização:</strong> <?php echo $hora_temperatura ?> - <a href="#">Histórico</a>
@@ -83,7 +83,7 @@
                             <strong>Humidade: 70%</strong> 
                         </div>
                         <div class="card-body">
-                            <img src="./imagens/humidity-high.png" alt="">
+                            <img src="./images/humidity-high.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
                             <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
@@ -97,7 +97,7 @@
                             <strong>Led Arduino: Ligado</strong>
                         </div>
                         <div class="card-body">
-                            <img src="./imagens/light-on.png" alt="">
+                            <img src="./images/light-on.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
                             <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
