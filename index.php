@@ -14,7 +14,7 @@
             if ($credentials[0] == $_POST['username'] && password_verify($_POST['password'], $credentials[1])) {
                 $loginStatus = true;
                 $_SESSION['username'] = $_POST['username'];
-                header("refresh:3; dashboard.php");
+                header("refresh:2; dashboard.php");
                 break; // Sai do ciclo se encontrar o username e a password corretas
             }
             else{

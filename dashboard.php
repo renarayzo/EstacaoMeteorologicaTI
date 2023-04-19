@@ -19,8 +19,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="5">
-        <title>Plataforma IoT</title>
+        <!--<meta http-equiv="refresh" content="5">-->
+        <title>Estação Meteorologica</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -31,8 +31,9 @@
         <nav class="navbar navbar-expand-sm bg-light navbar-light">
             <div class="container-fluid">
                 <ul class="navbar-nav">
+                    <img src="./images/solNav.png" alt="Sol" width="5%">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Dashboard EI-TI</a>
+                        <a class="nav-link active" href="#">Dashboard ME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -42,7 +43,7 @@
                     </li>
                 </ul>
 
-                <a class="btn btn-outline-secondary" type="submit" href="logout.php">Logout</a>
+                <a class="btn btn-outline-secondary" type="submit" href="logout.php"><img src="./images/logoLogout.png" alt="logo" width="15">Logout</a>
             </div>
         </nav>
 

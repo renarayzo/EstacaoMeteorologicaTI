@@ -1,2 +1,2 @@
-alexandre,$2y$10$apauj.zNr4ClIfVas4LSmeOXvbAcyEiiCVhBl8fqHYuVRzrMI6S1K
-renato,$2y$10$fxCf6iIHXelD3k.zSOzx9eGa6Uvq8AWduORfEBYzDk0pLHvJ76CHy
+alexandre,$2y$10$apauj.zNr4ClIfVas4LSmeOXvbAcyEiiCVhBl8fqHYuVRzrMI6S1K,user
+renato,$2y$10$fxCf6iIHXelD3k.zSOzx9eGa6Uvq8AWduORfEBYzDk0pLHvJ76CHy,admin
