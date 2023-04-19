@@ -8,10 +8,17 @@
 ?>
 
 <?php
+    $date = date("d/m/Y") . " " . date("H:i"); // Variavel data a tomar o vlaor da data e da hora do momento que a página é acedida
+
+    // Declaração das variaveis de cada sensor ao buscar os valores aos respetivos ficheiros
     $valor_temperatura = file_get_contents("api/files/temperatura/valor.txt");
-    $hora_temperatura = file_get_contents("api/files/temperatura/hora.txt");
     $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
-    //echo $nome_temperatura . ": " . $valor_temperatura . " em " . $hora_temperatura
+    $valor_humidade = file_get_contents("api/files/temperatura/valor.txt");
+    $nome_humidade = file_get_contents("api/files/temperatura/nome.txt");
+    $valor_chuva = file_get_contents("api/files/temperatura/valor.txt");
+    $nome_chuva= file_get_contents("api/files/temperatura/nome.txt");
+    $valor_vento = file_get_contents("api/files/temperatura/valor.txt");
+    $nome_vento = file_get_contents("api/files/temperatura/nome.txt");
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +80,7 @@
                             <img src="./images/temperature-high.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
-                            <strong>Atualização:</strong> <?php echo $hora_temperatura ?> - <a href="#">Histórico</a>
+                            <strong>Atualização:</strong> <?php echo $date ?> - <a href="#">Histórico</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +94,7 @@
                             <img src="./images/humidity-high.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
-                            <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
+                            <strong>Atualização:</strong> <?php echo $date ?> - <a href="#">Histórico</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +108,7 @@
                             <img src="./images/light-on.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
-                            <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
+                            <strong>Atualização:</strong> <?php echo $date ?> - <a href="#">Histórico</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +137,7 @@
                             <tr>
                                 <td scope="row"><?php echo $nome_temperatura ?></td>
                                 <td><?php echo $valor_temperatura ?>°</td>
-                                <td><?php echo $hora_temperatura ?></td>
+                                <td><?php echo $date ?></td>
                                 <td><span class="badge rounded-pill text-bg-danger">Elevada</span></td>
                             </tr>
                             <tr>
