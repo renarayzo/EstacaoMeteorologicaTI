@@ -13,12 +13,12 @@
     // Declaração das variaveis de cada sensor ao buscar os valores aos respetivos ficheiros
     $valor_temperatura = file_get_contents("api/files/temperatura/valor.txt");
     $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
-    $valor_humidade = file_get_contents("api/files/temperatura/valor.txt");
-    $nome_humidade = file_get_contents("api/files/temperatura/nome.txt");
-    $valor_chuva = file_get_contents("api/files/temperatura/valor.txt");
-    $nome_chuva= file_get_contents("api/files/temperatura/nome.txt");
-    $valor_vento = file_get_contents("api/files/temperatura/valor.txt");
-    $nome_vento = file_get_contents("api/files/temperatura/nome.txt");
+    $valor_humidade = file_get_contents("api/files/humidade/valor.txt");
+    $nome_humidade = file_get_contents("api/files/humidade/nome.txt");
+    $valor_chuva = file_get_contents("api/files/chuva/valor.txt");
+    $nome_chuva= file_get_contents("api/files/chuva/nome.txt");
+    $valor_vento = file_get_contents("api/files/vento/valor.txt");
+    $nome_vento = file_get_contents("api/files/vento/nome.txt");
 ?>
 
 <!DOCTYPE html>
