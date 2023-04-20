@@ -81,11 +81,6 @@ $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
                                 </div>
                                 <div class="card-body p-4 pt-0">
                                     <div id="demo1" class="carousel slide" data-ride="carousel">
-                                        <ul class="carousel-indicators mb-0">
-                                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#demo1" data-slide-to="1"></li>
-                                            <li data-target="#demo1" data-slide-to="2"></li>
-                                        </ul>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="d-flex justify-content-between mb-4 pb-2">
@@ -124,11 +119,6 @@ $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
                                 </div>
                                 <div class="card-body p-4 pt-0">
                                     <div id="demo1" class="carousel slide" data-ride="carousel">
-                                        <ul class="carousel-indicators mb-0">
-                                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#demo1" data-slide-to="1"></li>
-                                            <li data-target="#demo1" data-slide-to="2"></li>
-                                        </ul>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="d-flex justify-content-between mb-4 pb-2">
@@ -169,11 +159,6 @@ $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
                                 </div>
                                 <div class="card-body p-4 pt-0">
                                     <div id="demo1" class="carousel slide" data-ride="carousel">
-                                        <ul class="carousel-indicators mb-0">
-                                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#demo1" data-slide-to="1"></li>
-                                            <li data-target="#demo1" data-slide-to="2"></li>
-                                        </ul>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="d-flex justify-content-between mb-4 pb-2">
@@ -212,11 +197,6 @@ $nome_temperatura = file_get_contents("api/files/temperatura/nome.txt");
                                 </div>
                                 <div class="card-body p-4 pt-0">
                                     <div id="demo1" class="carousel slide" data-ride="carousel">
-                                        <ul class="carousel-indicators mb-0">
-                                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#demo1" data-slide-to="1"></li>
-                                            <li data-target="#demo1" data-slide-to="2"></li>
-                                        </ul>
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="d-flex justify-content-between mb-4 pb-2">
