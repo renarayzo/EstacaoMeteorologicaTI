@@ -62,29 +62,53 @@
 
         <br>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <div class="card ">
-                        <div class="card-header sensor">
-                            <strong>Temperatura: <?php echo $valor_temperatura; ?>°</strong>
+        <div class="container" style="margin-bottom: 3%;">
+            
+                <div class="row-sensor">
+                    <div class="col-sm-5 text-center" style="margin-right: 6.5vh">
+                        <div class="card">
+                            <div class="card-header sensor">
+                                <strong>Temperatura: <?php echo $valor_temperatura; ?>°</strong>
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/temperature-high.png" alt="">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <strong>Atualização:</strong> <?php echo $hora_temperatura ?> - <a href="#">Histórico</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <img src="./images/temperature-high.png" alt="">
-                        </div>
-                        <div class="card-footer text-muted">
-                            <strong>Atualização:</strong> <?php echo $hora_temperatura ?> - <a href="#">Histórico</a>
+                    </div>
+                    
+                    <div class="col-sm-5 text-center" style="margin-bottom: 3%;">
+                        <div class="card ">
+                            <div class="card-header sensor">
+                                <strong>Humidade: 70%</strong> 
+                            </div>
+                            <div class="card-body">
+                                <img src="./images/humidity-high.png" alt="">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-4 text-center">
+
+                
+                    
+           
+            
+
+
+            <div class="row-sensor">
+                <div class="col-sm-5 text-center" style="margin-right: 6.5vh">
                     <div class="card ">
-                        <div class="card-header sensor">
-                            <strong>Humidade: 70%</strong> 
+                        <div class="card-header atuador">
+                            <strong>Chuva</strong>
                         </div>
                         <div class="card-body">
-                            <img src="./images/humidity-high.png" alt="">
+                            <img src="./images/light-on.png" alt="">
                         </div>
                         <div class="card-footer text-muted">
                             <strong>Atualização:</strong> 2023/03/10 14:31 - <a href="#">Histórico</a>
@@ -92,10 +116,10 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4 text-center">
+                <div class="col-sm-5 text-center">
                     <div class="card ">
                         <div class="card-header atuador">
-                            <strong>Led Arduino: Ligado</strong>
+                            <strong>Humidade</strong>
                         </div>
                         <div class="card-body">
                             <img src="./images/light-on.png" alt="">
@@ -106,6 +130,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <br>

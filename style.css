@@ -5,3 +5,24 @@
 .atuador{
     background-color: #ffbf6c;
 }
+
+.row-sensor{
+    padding-top: 5vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.column-sensor{
+    padding-top: 2vh;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.container-atuador{
+    position: relative;
+    text-align: center;
+    height: 3vh;
+    
+}
